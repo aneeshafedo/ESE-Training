@@ -21,6 +21,11 @@ public client class WeatherClient {
         self.weatherClient = new(self.url);
     }
 
+    //function to get weather of a country by country name or id
+    //@param: city - country name or country id
+    //@param: statecode - code of a city of the country given; optional
+    //@param: isByName - to indicate whether country name or the id given
+
     public remote function getWeatherByCity(string city,string? statecode, boolean isByName) returns @tainted json|error{
         http:Response? result = new;
         io:println("City : ", city, " api key : ", self.appid);
@@ -79,6 +84,9 @@ public client class WeatherClient {
 
     }
 
+    //function to get weather of multiple countries countries
+    //@param: countries- comma seperated string consist of Ids of multiple countries
+
     public remote function getWeatherofMultipleCities(string  countries)returns @tainted json|error{
 
         http:Response ? result = new;
@@ -120,6 +128,8 @@ public client class WeatherClient {
         }
 
     }
+
+    //function to get weather by latitude and longitude
 
     public remote function getWeatherbyLatLon(string lat, string lon)returns @tainted json|error{
         http:Response ? result = new;
