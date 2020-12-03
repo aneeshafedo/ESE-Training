@@ -1,0 +1,1 @@
+{"aneesha/Connector:0.1.0" : [{"function":{"name":"getWeatherByCity","requiredParams":[{"city":"string"},{"statecode":"string?"},{"isByName":"boolean"}],"returnType":"json"}},{"function":{"name":"getWeatherofMultipleCities","requiredParams":[{"countries":"string"}],"returnType":"json"}}]}
