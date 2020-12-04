@@ -1,23 +1,23 @@
-##ESE-Training
+**ESE-Training**
 
 This repository contains the solutions for WSO2 ESE Team Training Exercises.
 
-#Exercise 1
+__Exercise 1
 
 Implement a Ballerina service which allows following RESTful operations. Use an in-memory storage to store the customer details.
     - GET /customer/{id}
     - POST /customer
     - PUT /customer
 
-#Exercise 2
+__Exercise 2
 
 Extend the Exercise 1 to use a database to store the customer information
 
-#Exercise 3
+__Exercise 3
 
 Write a ballerina program to invoke an API secured with Oauth2. It should be able to handle the case of expired tokens.
 
-#Exercise 4
+__Exercise 4
 
 Build a connector to a database system
 Build a connector to a webAPI (weather API)
